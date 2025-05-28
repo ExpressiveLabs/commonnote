@@ -29,3 +29,4 @@ The `commonnote` data is stored on the system clipboard as plain JSON text. It s
 ### Who uses it
 The following hosts are known to use commonnote as their default note copying data structure:
 - [Mikoto Studio](https://mikoto.studio/)
+- [Maghni AI](https://maghni.ai) (work in progress)
