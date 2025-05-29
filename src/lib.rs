@@ -42,6 +42,38 @@ impl Data {
 
         Ok(data)
     }
+
+    #[cfg(feature = "util")]
+    pub fn convert_timing(&mut self, target_resolution: i64) {
+        if target_resolution <= 0 {
+            return;
+        }
+
+        let factor = target_resolution as f64 / self.header.resolution as f64;
+
+        self.header.resolution = target_resolution;
+
+        for note in &mut self.notes {
+            note.start = (note.start as f64 * factor) as i64;
+            note.length = (note.length as f64 * factor) as i64;
+        }
+    }
+
+    #[cfg(feature = "util")]
+    pub fn relative_to(&mut self, start: Option<i64>) {
+        let start = start.unwrap_or(0);
+        
+        if start < 0 {
+            return;
+        }
+
+        let notes_start = self.notes.first().map_or(0, |n| n.start);
+        
+        for note in &mut self.notes {
+            note.start -= notes_start - start;
+            note.start = note.start.max(0);
+        }
+    }
 }
 
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]

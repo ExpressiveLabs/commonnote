@@ -48,6 +48,15 @@ The header field contains a number of descriptors to help hosts correctly parse 
 ### Extra data
 At the end of the specification, there is room for extra global data. This can be used to transfer other information in addition to notes, for example fine-tuning automation, vocalist descriptors, and other useful data. This field may be used by hosts to store their own internal data structures as well. Receiving hosts should always validate data in this field before parsing incompatible data meant for another host.
 
+## Rust crate
+This library provides a basic Rust interface to handle and validate `commonnote` data. It's available as a crate from crates.io:
+```zsh
+cargo add commonnote
+```
+
+### Features
+This crate exposes the `util` feature, which enables utility functions that abstract away some common operations.
+
 ## Who uses it
 The following hosts are known to use commonnote as their default note copying data structure:
 - [Mikoto Studio](https://mikoto.studio/)

@@ -2,7 +2,17 @@
 name = "commonnote"
 version = "1.0.0"
 edition = "2024"
+authors = ["layetri <rosa@expressivelabs.net>"]
+description = "commonnote defines a common data structure for musical note information exchange between hosts."
+license = "MIT"
+repository = "https://github.com/ExpressiveLabs/commonnote"
+homepage = "https://expressivelabs.net/open"
+readme = "README.md"
+keywords = ["music", "note", "data structure", "clipboard"]
 
 [dependencies]
 serde = { version = "1.0.219", features = ["derive"] }
 serde_json = "1.0.140"
+
+[features]
+util = []
