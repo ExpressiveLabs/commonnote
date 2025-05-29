@@ -8,7 +8,7 @@ license = "MIT"
 repository = "https://github.com/ExpressiveLabs/commonnote"
 homepage = "https://expressivelabs.net/open"
 readme = "README.md"
-keywords = ["music", "note", "data structure", "clipboard"]
+keywords = ["music", "note", "data_structure", "clipboard", "vocal_synth"]
 
 [dependencies]
 serde = { version = "1.0.219", features = ["derive"] }
