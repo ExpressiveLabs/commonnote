@@ -61,3 +61,6 @@ This crate exposes the `util` feature, which enables utility functions that abst
 The following hosts are known to use commonnote as their default note copying data structure:
 - [Mikoto Studio](https://mikoto.studio/)
 - [Maghni AI](https://maghni.ai) (work in progress)
+
+There are community-made implementations available for the following hosts:
+- Synthesizer V Studio: [UtaUtaUtau/commonnote-svs](https://github.com/UtaUtaUtau/commonnote-svs)
