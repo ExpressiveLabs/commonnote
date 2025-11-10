@@ -62,6 +62,9 @@ The following hosts are known to use commonnote as their default note copying da
 - [Mikoto Studio](https://mikoto.studio/)
 - [Maghni AI](https://maghni.ai) (work in progress)
 
+These hosts support commonnote, but do not use it as their default data structure:
+- [OpenUTAU](https://github.com/stakira/OpenUtau)
+
 There are community-made implementations available for the following hosts:
 - Synthesizer V Studio: [UtaUtaUtau/commonnote-svs](https://github.com/UtaUtaUtau/commonnote-svs)
 - UTAU: [oxygen-dioxide/commonnote-utau](https://github.com/oxygen-dioxide/commonnote-utau)
