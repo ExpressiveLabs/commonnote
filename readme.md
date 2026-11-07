@@ -68,3 +68,4 @@ These hosts support commonnote, but do not use it as their default data structur
 There are community-made implementations available for the following hosts:
 - Synthesizer V Studio: [UtaUtaUtau/commonnote-svs](https://github.com/UtaUtaUtau/commonnote-svs)
 - UTAU: [oxygen-dioxide/commonnote-utau](https://github.com/oxygen-dioxide/commonnote-utau)
+- REAPER: [UtaUtaUtau/commonnote-reaper](https://github.com/UtaUtaUtau/commonnote-reaper)
